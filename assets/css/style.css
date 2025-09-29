@@ -9,3 +9,41 @@
 a {
     text-decoration: none;
 }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #141414;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: transparent;
+    font-size: 10em;
+    background-image: linear-gradient(to right, #f00, #ff0, #0ff, #0f0, #00f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 1000%;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
